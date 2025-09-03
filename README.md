@@ -14,10 +14,10 @@ Basit, web tabanlı bir **Todo List** uygulaması. Görev ekleyebilir, düzenley
 ## index.html
 Input alanı, ekleme butonu, görev listesi (ul), filtre butonları ve sayfa içi tüm görsel elemanları içerir.
 
-##style.css
+## style.css
 Sayfanın görünümünü ve tasarımını kontrol eder.Renkler, gölgeler, yazı tipleri, buton stili gibi.
 
-##app.js
+## app.js
 Görev ekleme, silme, düzenleme
 Görevleri tamamlandı olarak işaretleme
 LocalStorage ile görevlerin saklanması
