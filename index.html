@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Todo List</title>
+  <style>
+    
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">  
+    <h1>Todo List</h1>
+
+    
+    <div class="input-container">
+      <label for="todoInput" class="sr-only">Yeni görev ekle</label>
+      <input 
+        type="text" 
+        id="todoInput" 
+        placeholder="Görev girin..." 
+        aria-label="Yeni görev ekle"
+      />
+      <button id="plas" onclick="addTodo()" aria-label="Görev ekle">
+        <i class="fa-solid fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+   <div id="message" role="alert" aria-live="polite"></div>
+
+    
+    <ul id="todoList" role="list" aria-label="Görev listesi">
+      
+    </ul>
+
+   
+    <button class="sil" onclick="clearAll()" aria-label="Tamamlanan görevleri temizle">
+      <i class="fa-solid fa-trash" aria-hidden="true"></i>
+    </button> 
+
+    
+    <p id="taskCount" aria-live="polite">Aktif görev sayısı: 0</p>
+
+    
+    <div class="filters" role="tablist" aria-label="Görev filtreleri">
+      <button id="hepsi" role="tab" aria-selected="true" onclick="setFilter('all')">Hepsi</button>
+      <button id="yapilacak" role="tab" aria-selected="false" onclick="setFilter('active')">Yapılacak</button>
+      <button id="tamamlanan" role="tab" aria-selected="false" onclick="setFilter('completed')">Tamamlanan</button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
