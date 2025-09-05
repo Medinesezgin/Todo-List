@@ -82,7 +82,7 @@ function removeTodo(id){
     todoElement.style.animation='fadeOut 0.3s ease';
 
     setTimeout(() =>{
-
+        const index = savedTodos.findIndex((t) => t.id === id);
         if (index > -1) savedTodos.splice(index, 1);
         localStorage.setItem("todos", JSON.stringify(savedTodos));
         todoElement.remove();
