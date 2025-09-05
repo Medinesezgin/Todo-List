@@ -1,6 +1,8 @@
 :root{
-    --primary-color: #f89100; 
+    --primary-color: #0073de; 
 }
+
+
 
 body{
     margin: 0;
@@ -11,18 +13,26 @@ body{
     min-height: 100vh;  
     background: linear-gradient(
         90deg,
-        rgb(235, 179, 106),
+        rgb(255, 255, 255),
         rgb(255, 255, 255)
     );
 }
 
 .container{
-    width: 90%;            
-    max-width: 400px;      
+    width: 90%;              
+    max-width: 500px; 
+    height: 60%;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(50, 49, 49, 0.91),
+            rgba(255, 255, 255, 0.992));
+    border-radius: 5%; 
+    backdrop-filter: blur(50px);
+    padding: 5%; 
+    margin: auto;
+    min-height: 400px;
+    box-shadow: 0 0 10px rgb(2, 2, 2);
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    
 }
 
 h1{
@@ -58,10 +68,8 @@ button{
 }
 
 button:hover{
-    background-color: #edac68;
+    background-color: #74afe5;
 }
-
-
 
 
 ul{
@@ -153,7 +161,7 @@ span{
 }
 
 .sil {
-    background-color: #ff9f10;
+    background-color: #e20404;
     color: white;
     padding: 10px 16px;
     border: none;
@@ -164,7 +172,7 @@ span{
 }
 
 .sil:hover {
-    background-color: #ff9f10;
+    background-color: #c91e1e;
 }
 
 #sayac{
@@ -173,23 +181,31 @@ span{
 
 p{
   /* background-color: #f8a54c; */
-  color: #ff9f10;
+  color: #00d828;
   font-size: 20px;
 
 }
 
 #hepsi{
-    background-color: #ff9f10;
+    background-color: #0073de;
+    
+}
+#hepsi:hover{
+    background-color: #74afe5;
 }
 #yapilacak{
-    background-color: #ff9f10;
+    background-color: #0073de;
 }
-
+#yapilacak:hover{
+    background-color: #74afe5;
+}
 
 #tamamlanan{
-    background-color: #ff9f10;
+    background-color: #0073de;
 }
-
+#tamamlanan:hover{
+    background-color: #74afe5;
+}
 .sr-only {
       position: absolute;
       width: 1px;
@@ -202,4 +218,41 @@ p{
     }
 
 
+    .ok{
+        background-color: #00d828;
+        border-radius: 20px;
+    }
+    .ok:hover{
+        background-color: #a3e4ae;
+    }
+     .edit{
+        background-color: #0073de;
+        border-radius: 20px;
+     }
+     .edit:hover{
+        background-color: #90bee9;
+     }
+     .remove{
+        background-color: #e20404;
+        border-radius: 20px;
+     }
+     .remove:hover{
+        background-color: #de8888;
+     }
+
+
+     .expired {
+    color: red;
+    font-weight: bold;
+}
+.deadline {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+#todoDeadline{
+    border-radius: 5px;
+    border: none;
     
+}

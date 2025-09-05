@@ -8,9 +8,8 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Todo List</title>
-  <style>
-    
 
+  <style>
     
   </style>
 </head>
@@ -21,12 +20,15 @@
     
     <div class="input-container">
       <label for="todoInput" class="sr-only">Yeni görev ekle</label>
+      <input type="date" id="todoDeadline" aria-label="Son tarih (opsiyonel)"/>
       <input 
         type="text" 
         id="todoInput" 
         placeholder="Görev girin..." 
         aria-label="Yeni görev ekle"
       />
+      
+    
       <button id="plas" onclick="addTodo()" aria-label="Görev ekle">
         <i class="fa-solid fa-plus" aria-hidden="true"></i>
       </button>
@@ -55,6 +57,7 @@
 
   </div>
 
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
